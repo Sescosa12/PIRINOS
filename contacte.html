@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIRINOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+
+    <header class="header">
+        <div class="menucontainer">
+            <a href="index.html" class="LOGO">PIRINOS</a>
+            
+            <label for="menu"><img src="imatges/ima.jpg" class="menu-icono" alt="Menu Icon"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="quefem.html">Que fem</a></li>
+                    <li><a href="os.html">Os Bru</a></li>
+                    <li><a href="map.html">On els trobem</a></li>
+                    <li><a class="nav-link active" href="contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Enviar Sugerencia</h1>
+        <form id="suggestion-form">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correu Electrónic:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="suggestion">Sugerencia:</label>
+            <textarea id="suggestion" name="suggestion" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="response"></div>
+    </main>
+
+    <section id="contacte" class="content-section">
+        <h2>Contacte</h2>
+        <div class="contact-info">
+            <p>Per a més informació, si us plau contacteu-nos a:</p>
+            <div class="info-item">
+                <img src="imatges/cor.png" alt="Ícona de correu electrònic">
+                <p>info@ossosdelpirineu.org</p>
+            </div>
+            <div class="info-item">
+                <img src="imatges/tel.png" alt="Ícona de telèfon">
+                <p>+34 626 68 25 37</p>
+            </div>   
+            <div class="info-item">
+                <img src="imatges/insta.jpg" alt="Ícona d'Instagram">
+                <p>pirinoscat</p>
+            </div>   
+            <div class="info-item">
+                <img src="imatges/twit.jpg" alt="Ícona de Twitter">
+                <p>pirinoscat</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">© 2024 Conservació dels Ossos del Pirineu. Tots els drets reservats.</p>
+        <div class="footer-images">
+            <img src="imatges/Gene.png" alt="Logo de la Generalitat de Catalunya">
+            <img src="imatges/ue.png" alt="Logo de la Unió Europea">
+        </div>
+    </footer>
+
+</body>
+</html>

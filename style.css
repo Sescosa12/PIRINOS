@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Color de fons clau cel molt clar */
+    color: #0e0c0c;
+    text-align: center; /* Ajusta tot el text al centre */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assegura que el cos de la pàgina ocupa com a mínim l'alçada de la pantalla */
+}
+
+.header {
+    background-color: rgba(0, 16, 30, 0.8); /* Blau fosc */
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: justify; /* Justifica el text */
+}
+
+.menucontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.LOGO {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+.menu-icono {
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: rgba(0, 16, 30, 0.8); /* Blau fosc */
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: justify; /* Justifica el text */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1em;
+}
+
+.navbar ul li a {
+    color: #fcfcfcfb;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: rgb(230, 245, 144);
+}
+
+.header-info {
+    text-align: justify; /* Justifica el text */
+    max-width: 1200px; /* Augmenta l'amplada màxima */
+    margin: auto; /* Centrat el contingut */
+    padding: 1em;
+    background-color: #fffffffb; /* Fons del contingut */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.856);
+}
+
+.header-info h1 {
+    margin-bottom: 0.5em;
+    text-align: center; /* Centra els títols */
+}
+
+.main-image {
+    width: 100%; /* Fer que la imatge ocupi tot l'ample disponible */
+    max-width: 600px; /* Amplada màxima de la imatge */
+    height: auto; /* Alçada automàtica */
+    display: block;
+    margin: auto; /* Centrar la imatge */
+}
+
+#mapa {
+    padding: 2em 0; /* Espaiat al voltant del mapa */
+    text-align: justify; /* Justifica el text */
+}
+
+.map-container {
+    width: 100%;
+    max-width: 100%; /* Fer que el mapa ocupi tot l'ample disponible */
+    overflow: hidden; /* Evita que el mapa es desborde si té contingut ampliat */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.856);
+}
+
+iframe {
+    width: 100%;
+    height: 600px; /* Alçada del mapa (ajusta-ho segons les teves necessitats) */
+    border: none;
+}
+
+footer {
+    background-color: rgba(0, 16, 30, 0.8); /* Blau fosc */
+    color: white;
+    text-align: center; /* Centra el text */
+    padding: 1em 0;
+    margin-top: auto; /* Fa que el peu de pàgina estigui sempre al final de la pàgina */
+}
+
+.footer-images {
+    display: flex;
+    justify-content: flex-end; /* Alinea les imatges a la dreta */
+    gap: 10px;
+    padding-right: 20px; /* Espaiat a la dreta de les imatges */
+}
+
+.footer-images img {
+    width: 50px;
+    height: auto;
+}
+
+/* Centra el text de copyright */
+footer .copyright {
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+.footer-images {
+    display: flex;
+    justify-content: flex-end; /* Alinea les imatges a la dreta */
+    gap: 10px;
+    padding-right: 20px; /* Espaiat a la dreta de les imatges */
+}
+
+.footer-images img {
+    width: 50px;
+    height: auto;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta aquesta mida segons calgui */
+    height: 500px;    /* Ajusta aquesta mida segons calgui */
+    overflow: hidden;
+    margin: auto;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-container img.active {
+    opacity: 1;
+}
+
+/* Estils per al text de la secció "QUE FEM" */
+#que-fem {
+    text-align: justify; /* Justifica el text */
+    padding: 20px; /* Espaiat intern */
+}
+
+/* Estils per a la llista dins de "QUE FEM" */
+#que-fem ul {
+    list-style: none; /* Treu els punts de la llista */
+    padding: 0; /* Treu el padding */
+    text-align: left; /* Alinea el text a l'esquerra dins del contenidor */
+    display: inline-block; /* Fa que la llista es comporti com un element en línia */
+}
+
+/* Estils per a les imatges */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta aquesta mida segons calgui */
+    height: 500px;    /* Ajusta aquesta mida segons calgui */
+    overflow: hidden;
+    margin: 40px auto; /* Centra la imatge i afegeix espai a dalt i baix */
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-container img.active {
+    opacity: 1;
+}
+
+.content-section {
+    text-align: justify; /* Justifica el text */
+    max-width: 1200px; /* Augmenta l'amplada màxima */
+    margin: auto; /* Centrat el contingut */
+    padding: 1em;
+    background-color: #fffffffb; /* Fons del contingut */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.856);
+}
+
+.content-section h1, .content-section h2 {
+    text-align: center; /* Centra els títols */
+}
+
+.content-section ul {
+    padding-left: 20px; /* Espaiat a l'esquerra per a la llista */
+}
+
+.content-section li {
+    margin-bottom: 10px; /* Espaiat inferior per a cada element de la llista */
+}
+
+/* Estils específics per a la imatge de l'os bru */
+.content-section img {
+    display: block;
+    width: 100%; /* Fer que l'amplada sigui igual a la mida del contenidor */
+    height: auto; /* Alçada automàtica per mantenir la proporció de l'imatge */
+    max-width: 100%; /* Màxima amplada per a la imatge */
+    border-radius: 8px; /* Rodeu la imatge amb una mica de radi de cantonada */
+    object-fit: cover; /* Ajusta l'imatge perquè ocupi completament el contenidor */
+}
+
+/* Estils específics per a la imatge de contacte */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra els ítems horitzontalment */
+    gap: 20px; /* Espai entre els ítems */
+    max-width: 1200px; /* Augmenta l'amplada màxima */
+    margin: auto; /* Centra el contenidor */
+    text-align: justify; /* Justifica el text */
+}
+
+.info-item {
+    display: flex;
+    align-items: center; /* Alinea verticalment els ítems */
+    gap: 10px; /* Espai entre la imatge i el text */
+}
+
+.info-item img {
+    width: 30px; /* Amplada fixa per a les imatges */
+    height: 30px; /* Alçada fixa per a les imatges */
+}
+
+.contact-info p {
+    margin: 0; /* Elimina el marge inferior dels paràgrafs dins de .contact-info */
+}
+
+/* Estils per a la secció "Que fem" */
+#que-fem {
+    text-align: justify; /* Justifica el text */
+    padding: 20px; /* Espaiat intern */
+}
+
+#que-fem h2 {
+    margin-bottom: 20px; /* Espaiat inferior per al títol */
+}
+
+#que-fem ul {
+    list-style: none; /* Treu els punts de la llista */
+    padding: 0; /* Treu el padding */
+    max-width: 1000px; /* Augmenta l'amplada màxima */
+    margin: auto; /* Centrat la llista */
+    text-align: justify; /* Justifica el text dins del contenidor */
+}
+
+#que-fem ul li {
+    margin-bottom: 20px; /* Espaiat inferior per a cada element de la llista */
+    text-align: justify; /* Justifica el text */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Amplada màxima per al contenidor d'imatges */
+    height: 500px; /* Alçada fixa per al contenidor d'imatges */
+    overflow: hidden;
+    margin: auto; /* Centra el contenidor */
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+.image-container img.active {
+    opacity: 1;
+}
+
+@media (max-width: 375px) {
+    .header-info {
+        background-color: rgb(240, 248, 255);
+    }
+}
+
+/* Centra el text de copyright al peu de pàgina */
+.footer-text {
+    text-align: center;
+    margin-top: 1em;
+}
+/* Contingut de styles.css */
+@media (max-width: 375px) {
+    .header-info {
+        background-color: rgb(240, 248, 255);
+    }
+
+    .header-info,
+    .content-section,
+    .contact-info,
+    footer {
+        max-width: 100%;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .header-info,
+    .content-section,
+    #que-fem {
+        padding: 0.5em;
+    }
+
+    .header-info h1,
+    .content-section h2,
+    #que-fem h2 {
+        font-size: 1.2em;
+    }
+
+    .footer-images {
+        justify-content: center;
+    }
+
+    .menucontainer {
+        padding: 0.5em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar ul li {
+        margin: 0.3em 0;
+    }
+
+    .navbar ul li a {
+        padding: 0.8em;
+    }
+
+    .LOGO {
+        font-size: 1em;
+    }
+
+    .menu-icono {
+        width: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .header-info {
+        background-color: rgb(240, 248, 255); /* Fons de color per a .header-info */
+    }
+
+    .header-info,
+    .content-section,
+    .contact-info,
+    footer {
+        max-width: 100%; /* Amplada màxima a 100% per a aquests elements */
+    }
+
+    .image-container {
+        height: 200px; /* Alçada més petita per a la imatge */
+    }
+
+    iframe {
+        height: 300px; /* Alçada reduïda per a l'iframe */
+    }
+
+    .header-info,
+    .content-section,
+    #que-fem {
+        padding: 0.5em; /* Redueix el padding per a dispositius petits */
+    }
+
+    .header-info h1,
+    .content-section h2,
+    #que-fem h2 {
+        font-size: 1.2em; /* Redueix la mida de la font per a dispositius petits */
+    }
+
+    .footer-images {
+        justify-content: center; /* Centra les imatges al peu de pàgina */
+    }
+
+    .menucontainer {
+        padding: 0.5em; /* Espaiat més petit per a dispositius petits */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Convertim la llista en una columna per a mides petites */
+        align-items: stretch; /* Estirem els enllaços per ocupar tot l'ample */
+    }
+
+    .navbar ul li {
+        margin: 0.3em 0; /* Espaiat més petit entre elements en la columna */
+    }
+
+    .navbar ul li a {
+        padding: 0.8em; /* Espaiat dels enllaços en mida més gran */
+    }
+
+    .LOGO {
+        font-size: 1em; /* Redueix la mida del LOGO per a dispositius més petits */
+    }
+
+    .menu-icono {
+        width: 20px; /* Redueix la mida de l'ícon del menú */
+    }
+}
+@media (max-width: 375px) {
+    .menucontainer {
+        padding: 0.5em; /* Espaiat més petit per a dispositius petits */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Convertim la llista en una columna per a mides petites */
+        align-items: stretch; /* Estirem els enllaços per ocupar tot l'ample */
+    }
+
+    .navbar ul li {
+        margin: 0.3em 0; /* Espaiat més petit entre elements en la columna */
+    }
+
+    .navbar ul li a {
+        padding: 0.8em; /* Espaiat dels enllaços en mida més gran */
+    }
+
+    .LOGO {
+        font-size: 1em; /* Redueix la mida del LOGO per a dispositius més petits */
+    }
+
+    .menu-icono {
+        width: 20px; /* Redueix la mida de l'ícon del menú */
+    }
+}
+.image-container img {
+    width: 100%; /* Fer que l'amplada de la imatge sigui igual a l'amplada del seu contenidor */
+    max-width: 100%; /* Garantir que la imatge no superi l'ample màxim del contenidor */
+    height: auto; /* Alçada automàtica per mantenir la proporció */
+    object-fit: cover; /* Assegurar que l'imatge s'ajusti dins dels límits especificats */
+    border-radius: 8px; /* Cantó arrodonit opcional per a les imatges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional per a les imatges */
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        max-width: 375px; /* Amplada màxima de la barra d'eines */
+        margin: 0 auto; /* Centrat horitzontalment */
+        padding: 0; /* Eliminar qualsevol padding que pugui interferir amb l'amplada */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar ul li {
+        margin: 0.3em 0;
+    }
+
+    .navbar ul li a {
+        padding: 0.8em;
+    }
+
+    .LOGO {
+        font-size: 1em;
+    }
+
+    .menu-icono {
+        width: 20px;
+    }
+}
+/* CSS per la barra d'eines */
+.toolbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Elements dins la barra d'eines */
+  .toolbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Canvi de l'estil quan la pantalla és de 375 píxels o menys */
+  @media (max-width: 375px) {
+    .toolbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  

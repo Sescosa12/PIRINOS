@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIRINOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+
+    <header class="header">
+        <div class="menucontainer">
+            <a href="index.html" class="LOGO">PIRINOS</a>
+            
+            <label for="menu"><img src="imatges/ima.jpg" class="menu-icono" alt="Menu Icon"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a class= "nav-link active" href="quefem.html">Que fem</a></li>
+                    <li><a href="os.html">Os Bru</a></li>
+                    <li><a href="map.html">On els trobem</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="que-fem" class="content-section">
+        <h2>QUE FEM</h2>
+        <p>En l´organització Pirinos estem compromesos amb la conservació dels ossos del Pirineu i portem a terme diverses activitats per garantir la seva protecció i supervivència:</p>
+        <ul>
+            <li><strong>- Seguiment i monitoratge:</strong> Utilitzem tecnologies avançades per rastrejar els moviments dels ossos i estudiar els seus hàbits alimentaris i reproductius.</li>
+            <li><strong>- Investigació científica:</strong> Portem a terme estudis sobre la biologia, la genètica i el comportament dels ossos per comprendre millor les seves necessitats i amenaces.</li>
+            <li><strong>- Educació i sensibilització:</strong> Organitzem campanyes de conscienciació per educar el públic sobre la importància de la conservació dels ossos i com poden contribuir a la seva protecció.</li>
+            <li><strong>- Col·laboració amb altres entitats:</strong> Treballem conjuntament amb governs, comunitats locals i altres organitzacions de conservació per desenvolupar i implementar estratègies efectives de protecció.</li>
+            <li><strong>- Restauració d'hàbitats:</strong> Participem activament en la restauració d'hàbitats clau per als ossos del Pirineu, contribuint a la seva supervivència a llarg termini.</li>
+            <li><strong>- Monitoratge comunitari:</strong> Involucrem les comunitats locals en activitats de monitoratge i conservació per fomentar la seva implicació directa en la protecció dels ossos.</li>
+        </ul>
+    
+        <div class="image-container slider">
+            <img src="imatges/esco.jpg" alt="Ecosistema de los Pirineos" class="equal-size-image">
+            <img src="imatges/inv.jpg" alt="Investigación científica" class="equal-size-image">
+            <img src="imatges/d.jpg" alt="Conservación del hábitat" class="equal-size-image">
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Conservació dels Ossos del Pirineu. Tots els drets reservats.</p>
+        <div class="footer-images">
+            <img src="imatges/Gene.png" alt="Descripción de la imagen">
+            <img src="imatges/ue.png" alt="Descripción de la imagen">
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentIndex = 0;
+            const images = document.querySelectorAll(".slider img");
+            const totalImages = images.length;
+
+            function showNextImage() {
+                images[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex + 1) % totalImages;
+                images[currentIndex].classList.add("active");
+            }
+
+            // Inicialitza la primera imatge
+            images[currentIndex].classList.add("active");
+
+            // Configura el temporitzador per canviar d'imatge cada 3 segons
+            setInterval(showNextImage, 3000);
+        });
+    </script>
+</body>
+</html>
+
