@@ -54,7 +54,3 @@ El mapa que apareix a la web es va elaborar mitjançant a ´informació de les n
 Dificultats: Si que aquest projecte la informació és molt limitada però crec que el més dificil al realitzar la pagina en el primer moment en va costar molt en com instalar el mapa i com aconseguir quadrar-ho i despres una altre part que hem va costar molt fou penjar-ho tot el Github (era perque ho guardava en noms malaments).
 
 Millores: Tot així que el diseny de la pagina en opinio personal m´agrada crec que ha quedat de una manera més infantil (més apta per infants petits), també al portar-ho a altres dispositius s´ha m´ha dificultat molt però mitjananment s´adaptat.
-
-6- 
-
-
